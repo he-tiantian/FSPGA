@@ -1,6 +1,6 @@
 Discovering Fuzzy Structural Patterns for Graph Analytics (FSPGA)
 
-This repository contains the materials related to the manuscript "Discovering Fuzzy Structural Patterns for Graph Analytics," including the drafted version of the paper, and the executable of the algorithm.
+This repository contains the materials related to the manuscript "Discovering Fuzzy Structural Patterns for Graph Analytics," including the drafted version of the paper (FSPGA.pdf), and the executable of the algorithm (FSPGA.zip).
 
 If you want to read the full text of the paper, please check http://ieeexplore.ieee.org/document/8253904/. 
 
