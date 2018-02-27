@@ -1,6 +1,6 @@
 Discovering Fuzzy Structural Patterns for Graph Analytics (FSPGA)
 
-This repository contains the materials related to the manuscript "Discovering Fuzzy Structural Patterns for Graph Analytics," including the drafted version of the paper (Draft_FSPGA.pdf), and the executable of the algorithm (FSPGA.zip).
+This repository contains the materials related to the manuscript "Discovering Fuzzy Structural Patterns for Graph Analytics," including the drafted version of the paper, and the executable of the algorithm.
 
 If you want to read the full text of the paper, please check http://ieeexplore.ieee.org/document/8253904/. 
 
@@ -9,22 +9,13 @@ You are welcome to cite our paper via: T. He, and K. C. C. Chan, "Discovering Fu
 
 How to use FSPGA 
 
-To use FSPGA (FSPGA.exe) to detect clusters in an attributed graph, please firstly prepare four files, which are named as "Config.txt," "edgelist," "node_similaritylist," and "statistics" and put them into the directory where FSPGA.exe is. The detailed information for these files is the following:
+To use FSPGA (FSPGA.exe) to detect clusters in an attributed graph, please firstly prepare four files, which are named as "Config.txt," "edgelist," "vertex2aid," and "statistics" and put them into the directory where FSPGA.exe is. The detailed information for these files is the following:
 
 edgelist: This file contains the connections in the attributed graph. There are two columns in this file which are the ids of source and target nodes. It should be noted that the starting node id must be 0.
 
-node_similaritylist: This file contains the attribute similarity (relativity) between each pair of nodes in the attributed graph. There are three columns in this file which are the ids of source and target nodes, and the corresponding value of similarity, respectively. Many measures can be used to evaluate the degrees of similarity between pairwise nodes in a attributed graph. For example, the cosine similarity can be used by FSPGA. Assume a matrix F (n-by-m, where n and m are the number of vertices and attributes in the attributed graph, respectively), the cosine similarity between pairwise vertices can be obtained by using the following pseudo codes: 
-F = F*F'; 
-F = F./(sqrt(diag(F)*diag(F)'));
-F(isnan(F))=0;
+vertex2aid: This file contains attributes that each vertex in the graph is associated with. There are two columns. The first column contains the vertex ids and the second column contains the ids of attributes that are labeled with each vertex. It should be noted that the starting ids for both node and attribute must be 0.
 
-Config.txt: This file contains the parameters used by FSPGA. There are 5 reals in this file. They are the settings related to the number of clusters, the bias between edge structure and attribute similarity in the optimization process, beta (degree of overlapping), the maximum number of optimizing iterations, and the minimum change of C between two iterations. Here is an example: 
-4 
-0.5 
-0.1 
-300 
-1e-9 
-This means the initial settings of FSPGA are the following: 4 clusters, 0.5 bias, 0.1 beta, 300 iterations of optimization, and 1e-9 minimum change. These parameters can be modified accordingly, or one may follow recommendations in the paper of FSPGA.
+Config.txt: This file contains the parameters used by FSPGA. There are 5 reals in this file. They are the settings related to the number of clusters, the bias between edge structure and attribute similarity in the optimization process, beta (degree of overlapping), the maximum number of optimizing iterations, and the minimum change of C between two iterations. Here is an example: 4 0.5 0.1 300 1e-9 This means the initial settings of FSPGA are the following: 4 clusters, 0.5 bias, 0.1 beta, 300 iterations of optimization, and 1e-9 minimum change. These parameters can be modified accordingly, or one may follow recommendations in the paper of FSPGA.
 
 statistics: This file contains the information of the attributed graph. Here is an example: 500 9000 50 It means this attributed graph contained 500 vertices, 9000 edges, and 50 attributes, respectively. To help users get familiar with the files used by FSPGA, we provide the corresponding files of a set of attributed graph data which are in the directory ".\example". One may check them for the details.
 
