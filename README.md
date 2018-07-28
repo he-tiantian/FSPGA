@@ -21,6 +21,6 @@ statistics: This file contains the information of the attributed graph. Here is 
 
 After completing all the preparations, one is able to run FSPGA to perform the task of clustering in attributed graph data by running a .bat file in which contains the following codes: "FSPGA.exe pause." The results of clustering in the attributed graph will be written into a file after FSPGA completes the optimization process. If FSPGA cannot be executed, please check readme.txt for the requirements of running environment, which is in the zip file.
 
-Notice: This software is permitted to use only for research and non-commercial activities. If you have any question, please feel free to contact us via csthe@comp.polyu.edu.hk.
+Notice: This software is permitted to use only for research and non-commercial activities. If you have any question, please feel free to contact us via tiantian.he@outlook.com.
 
 At last, thanks very much for using FSPGA.
