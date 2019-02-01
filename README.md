@@ -4,7 +4,7 @@ This repository contains the materials related to the manuscript "Discovering Fu
 
 If you want to read the full text of the paper, please check http://ieeexplore.ieee.org/document/8253904/. 
 
-You are welcome to cite our paper via: T. He, and K. C. C. Chan, "Discovering Fuzzy Structural Patterns for Graph Analytics," IEEE Transactions on Fuzzy Systems, doi:10.1109/TFUZZ.2018.2791951, 2018.
+You are welcome to cite our paper via: T. He, and K. C. C. Chan, "Discovering Fuzzy Structural Patterns for Graph Analytics," IEEE Transactions on Fuzzy Systems, vol. 26, no. 5, pp. 2785-2796, 2018.
 
 
 How to use FSPGA 
